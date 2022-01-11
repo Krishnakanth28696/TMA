@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This site alows you to learn music in a easy way">
+    <title>Thomas Music Academy</title>
+    <link rel="icon" type="image/x-icon" href="images/Logo2.png">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500;700&family=Playfair+Display:wght@500&family=Roboto+Slab:wght@300&family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="box1">
+                <div class="logo"><img src="images/Logo1.jpg" alt="Logo"></div>
+                <h1>Thomas Music Academy</h1>
+                <nav><a href="contact.html">Contact us</a></nav>
+            </div>          
+        </header>
+
+        
+        <div class="BGImage">
+            <img src="images/BGImage.jpg" alt="BGImage">
+            <div class="BGtext">
+                <h3 id="bg">Are you new to Music ?</h3>
+                <h3 id="bg1">It's the right place to start...</h3>
+                <nav id="bg2" onclick="openForm()">Register Here</nav>
+            </div>
+        </div>
+
+        <div class="form-popup" id="myForm">
+            <form action="mailto:krishna28696@gmail.com" method="POST" enctype="text/plain" class="form-container">
+              <h1>Login</h1>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
+
+        <div class="iconcontainer">
+            <div class="icons">
+                <h2>Our primary Teaching</h2>
+                <div class="iwrap"><img src="images/vocal.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Vocal Training</div>
+                    </div>
+                </div>
+                <div class="iwrap"><img src="images/piano.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Piano Lessons</div>
+                    </div>
+                </div>
+                <div class="iwrap"><img src="images/guitar.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Guitar Lessons</div>
+                    </div>
+                </div>
+                <div class="iwrap"><img src="images/violin.png" alt="">
+                    <div class="overlay">
+                        <div class="text">Violin Lessons</div>
+                    </div>
+                </div>
+                <div class="iwrap"><img src="images/harmonium.jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Harmonium Lessons</div>
+                    </div>
+                </div>
+                <div class="iwrap"><img src="images/Theory (1).jpg" alt="">
+                    <div class="overlay">
+                        <div class="text">Music Theory</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <section>
+            <h2>Our Students Work</h2>
+            <div class="box2">
+                <video width="400" height="280" controls>
+                    <source src="videos/TMA6.mp4" type="video/mp4">
+                </video>
+                <video width="400" height="280" controls>
+                    <source src="videos/TMA5.mp4" type="video/mp4">
+                </video>
+                <video width="400" height="280" controls>
+                    <source src="videos/TMA3.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <article>
+            <h2>Our Features</h2>
+            <div class="tbox">
+                <p>We highly encourage to learn music in one to one sessions of 1 hour a day. It will reduce the surrounding disturbances, ask doubts freely, to point the mistakes easily and due to pandemic</p>
+            </div>
+            <div class="tbox">
+                <p>We are teaching students from almost all ages, because music is common to all. and from different professions, students, doctors, IT employees, hobbists ets..</p>
+            </div>
+            <div class="tbox">
+                <p>We are providing training for both practical and theory grade exams in Trinity college London.</p>
+            </div>
+            <div class="tbox">
+                <p>We are giving space to students to learn from home itself. We personally train them from home on local area</p>
+            </div>
+            <div class="tbox">
+                <p>We are providing a variety of instruments on western leaerning and vocal traing is also given.</p>
+            </div>
+            <div class="tbox">
+                <p>We are teaching students from different countries at different time zones and clarify doubts through onlines sessions.</p>
+            </div>
+            <div class="tbox">
+                <p>We are providing timings according to the students convinient. Kids, students, workers, home makers etc.. are all free convinienttime to learn from our end</p>
+            </div>
+            <div class="tbox">
+                <p>We are preparing students for different competitions at local as well as district and state levels.</p>
+            </div>
+        </article>
+        <!-- <div class="feedback">
+            <div class="youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7p0RnqIwpjU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xoNJSS0QSSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div> -->
+        <footer>
+            <p>Copyright 2021</p>
+        </footer>
+        <script>
+            function openForm() {
+            document.getElementById("myForm").style.display = "block";
+            document.getElementById("bg").style.display = "none";
+            document.getElementById("bg1").style.display = "none";
+            document.getElementById("bg2").style.display = "none";
+            }
+
+            function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+            document.getElementById("bg").style.display = "block";
+            document.getElementById("bg1").style.display = "block";
+            document.getElementById("bg2").style.display = "block";
+            }
+        </script>
+    </div>
+
+</body>
+</html>
